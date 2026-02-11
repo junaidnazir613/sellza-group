@@ -1,25 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sellza Group</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sellza Group of Companies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-body {margin:0;font-family:Arial;background:#f4f4f4;}
-header {background:#000;color:white;text-align:center;padding:40px;}
-nav {background:#111;text-align:center;padding:15px;}
-nav a {color:white;margin:15px;text-decoration:none;font-weight:bold;}
-section {padding:60px 20px;text-align:center;}
-.card {background:white;margin:20px auto;padding:20px;width:250px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-footer {background:#000;color:white;text-align:center;padding:20px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+header h1{
+    font-size:50px;
+    color:#d4af37;
+}
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+.btn{
+    margin-top:20px;
+    padding:12px 30px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:500;
+}
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+h2{
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:35px;
+}
+.companies{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+.card{
+    background:#1a1a1a;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card h3{
+    margin:15px 0;
+    color:#d4af37;
+}
+.card p{
+    padding:0 15px 20px;
+}
+footer{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    color:#aaa;
+}
 </style>
 </head>
 
 <body>
-
-<header>
-<h1>Sellza Group of Companies</h1>
-<p>Multi-Industry Business Group</p>
-</header>
 
 <nav>
 <a href="#about">About</a>
@@ -27,39 +110,56 @@ footer {background:#000;color:white;text-align:center;padding:20px;}
 <a href="#contact">Contact</a>
 </nav>
 
+<header>
+<h1>Sellza Group</h1>
+<p>Multi-Industry Excellence & Global Vision</p>
+<a href="#companies" class="btn">Explore Our Companies</a>
+</header>
+
 <section id="about">
 <h2>About Us</h2>
-<p>Sellza Group operates across multiple industries including technology, commerce, media and future ventures.</p>
+<p>
+Sellza Group of Companies is a diversified corporate group operating across 
+technology, commerce, media, and future ventures. We build powerful brands 
+with innovation, strategy, and premium business standards.
+</p>
 </section>
 
 <section id="companies">
 <h2>Our Companies</h2>
 
+<div class="companies">
+
 <div class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 <h3>Sellza Tech</h3>
-<p>IT & Software Solutions</p>
+<p>IT Solutions, Software Development & Digital Innovation.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
 <h3>Sellza Commerce</h3>
-<p>E-commerce & Amazon Business</p>
+<p>E-commerce, Amazon Business & Global Trading.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
 <h3>Sellza Media</h3>
-<p>Branding & Digital Media</p>
+<p>Branding, Video Production & Digital Marketing.</p>
+</div>
+
 </div>
 
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 <p>Email: info@sellzagroup.com</p>
 <p>WhatsApp: +92XXXXXXXXXX</p>
 </section>
 
 <footer>
-<p>© 2026 Sellza Group. All Rights Reserved.</p>
+© 2026 Sellza Group of Companies. All Rights Reserved.
 </footer>
 
 </body>
